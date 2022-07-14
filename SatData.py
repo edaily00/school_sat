@@ -11,7 +11,7 @@ class SatData:
             self._everything = json.load(infile)
 
     def save_as_csv(self, database_nums):
-        with open('results.csv', 'w') as outfile:
+        with open('output.csv', 'w') as outfile:
             outfile.write(','.join(self._line))
             self._line.clear()
             outfile.write("\n")
